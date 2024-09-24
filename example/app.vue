@@ -1,9 +1,7 @@
 <template>
   <div>
-    <Button type="primary">主要按钮</Button>
+    <hp-button type="primary">主要按钮</hp-button>
   </div>
 </template>
-<script lang="ts" setup>
-import { Button } from "@xuetiao/components";
-</script>
+<script lang="ts" setup></script>
 

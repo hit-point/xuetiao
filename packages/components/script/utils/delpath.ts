@@ -25,7 +25,7 @@ const delPath = async (path: string) => {
       }
     });
 
-    if (path != `${pkgPath}/dist`) fs.rmdirSync(path);
+    if (path != `${pkgPath}/xuetiao`) fs.rmdirSync(path);
   }
 };
 export default delPath;

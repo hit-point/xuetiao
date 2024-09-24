@@ -5,9 +5,9 @@ import autoprefixer from "gulp-autoprefixer";
 import { pkgPath, componentPath } from "../utils/paths";
 import run from "../utils/run";
 
-// 删除dist
+// 删除xuetiao
 export const removeDist = () => {
-  return delPath(`${pkgPath}/dist`);
+  return delPath(`${pkgPath}/xuetiao`);
 };
 
 // 打包组件
@@ -20,8 +20,8 @@ export const buildStyle = () => {
   return src(`${componentPath}/src/**/style/**.less`)
     .pipe(less())
     .pipe(autoprefixer())
-    .pipe(dest(`${pkgPath}/dist/lib/src`))
-    .pipe(dest(`${pkgPath}/dist/es/src`));
+    .pipe(dest(`${pkgPath}/xuetiao/lib/src`))
+    .pipe(dest(`${pkgPath}/xuetiao/es/src`));
 };
 
 

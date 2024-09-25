@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev:example": "pnpm --filter @xuetiao/example run dev",
+    "dev:docs": "pnpm --filter @xuetiao/document run dev",
     "build:hp": "gulp -f packages/components/script/build/index.ts",
     "publish:hp": "gulp -f packages/components/script/publish/index.ts"
   },

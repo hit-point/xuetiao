@@ -1,6 +1,5 @@
 export default {
     title: 'Xuetiao',
-    base: process.env.NODE_ENV === 'production' ? '/xuetiao/' : '/',
     themeConfig: {
       nav: [{ text: '文档', link: '/guild/introduce' }],
       sidebar: {

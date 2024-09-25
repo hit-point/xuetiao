@@ -1,9 +1,9 @@
-import delPath from "../utils/delpath";
-import { series, parallel, src, dest } from "gulp";
-import less from "gulp-less";
-import autoprefixer from "gulp-autoprefixer";
-import { pkgPath, componentPath } from "../utils/paths";
-import run from "../utils/run";
+import delPath from '../utils/delpath';
+import { series, parallel, src, dest } from 'gulp';
+import less from 'gulp-less';
+import autoprefixer from 'gulp-autoprefixer';
+import { pkgPath, componentPath } from '../utils/paths';
+import run from '../utils/run';
 
 // 删除xuetiao
 export const removeDist = () => {
@@ -12,7 +12,7 @@ export const removeDist = () => {
 
 // 打包组件
 export const buildComponent = async () => {
-  run("pnpm run build", componentPath);
+  run('pnpm run build', componentPath);
 };
 
 // 打包样式
@@ -23,7 +23,6 @@ export const buildStyle = () => {
     .pipe(dest(`${pkgPath}/xuetiao/lib/src`))
     .pipe(dest(`${pkgPath}/xuetiao/es/src`));
 };
-
 
 export default series(
   async () => removeDist(),

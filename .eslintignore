@@ -1,0 +1,4 @@
+**.d.ts
+/packages/xuetiao
+dist
+node_modules

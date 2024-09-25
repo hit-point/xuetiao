@@ -47,9 +47,7 @@ const promptsOptions = [
     type: 'select', //单选
     name: 'template',
     message: '请选择一个模板',
-    choices: [
-      { title: 'hp-ui', value: 1 }
-    ]
+    choices: [{ title: 'hp-ui', value: 1 }]
   }
 ];
 const options = commandLineArgs(optionDefinitions);

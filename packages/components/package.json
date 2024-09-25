@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "vite build"
+    "build": "vite build",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
     "@xuetiao/utils": "workspace:^"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^1.6.0"
   }
 }

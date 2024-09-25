@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+import { defineConfig, UserConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import DefineOptions from 'unplugin-vue-define-options/vite';
 import dts from 'vite-plugin-dts';
@@ -68,5 +68,15 @@ export default defineConfig({
         }
       }
     }
-  ]
-});
+  ],
+  test: {
+    environment: 'happy-dom',
+    coverage: {
+      provider: 'v8',
+      all: true,
+      enabled: true,
+      reporter: ['lcov', 'html'], // 生产报告的格式，本地运行单元测试，可以注释该语句
+      extension: ['.vue']
+    }
+  }
+} as UserConfig);

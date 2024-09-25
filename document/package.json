@@ -1,18 +1,21 @@
 {
-  "name": "@xuetiao/example",
+  "name": "document",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "vite"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "docs:deploy": "node script/deploy.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.0.0",
-    "vite": "^4.1.1"
+    "vitepress": "^1.3.4",
+    "vue": "^3.2.36"
   },
   "dependencies": {
     "xuetiao": "workspace:^"

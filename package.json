@@ -6,15 +6,25 @@
   "scripts": {
     "lint:script": "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./",
     "lint:style": "stylelint --fix \"*.{css,less}\"",
+    "lint-staged": "lint-staged",
     "dev:example": "pnpm --filter @xuetiao/example run dev",
     "dev:docs": "pnpm --filter @xuetiao/document run dev",
     "build:hp": "gulp -f packages/components/script/build/index.ts",
-    "publish:hp": "gulp -f packages/components/script/publish/index.ts"
+    "publish:hp": "gulp -f packages/components/script/publish/index.ts",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,vue}": [
+      "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./",
+      "stylelint --fix \"packages/components/src/**/*.{css,less}\""
+    ]
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
     "@types/gulp": "^4.0.10",
     "@types/gulp-autoprefixer": "^0.0.33",
     "@types/gulp-less": "^0.0.32",
@@ -32,7 +42,9 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-less": "^5.0.0",
     "happy-dom": "^8.9.0",
+    "husky": "^8.0.3",
     "less": "^4.1.3",
+    "lint-staged": "^15.2.10",
     "postcss-html": "^1.5.0",
     "prettier": "^2.8.4",
     "release-it": "^15.6.0",

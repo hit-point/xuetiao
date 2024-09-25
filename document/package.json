@@ -2,7 +2,6 @@
   "name": "@xuetiao/document",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
@@ -11,7 +10,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "vitepress": "^1.3.4",
     "vue": "^3.2.36"

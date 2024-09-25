@@ -2,7 +2,6 @@
   "name": "xuetiao",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "type": "module",
   "scripts": {
     "dev:example": "pnpm --filter @xuetiao/example run dev",
@@ -12,7 +11,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/gulp": "^4.0.10",
     "@types/gulp-autoprefixer": "^0.0.33",

@@ -2,13 +2,12 @@
   "name": "@xuetiao/components",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "vite build"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@xuetiao/utils": "workspace:^"
   }
